@@ -1,4 +1,4 @@
-import {Homepage} from './pages/Homepage/Homepage'
+import {Homepage} from './Homepage/Homepage'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 const router = createBrowserRouter([
