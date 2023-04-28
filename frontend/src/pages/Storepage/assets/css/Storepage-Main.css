@@ -1,0 +1,47 @@
+.main{
+    height: 200vh;
+    background: rgb(0,38,73);
+    background: linear-gradient(135deg, rgba(0,38,73,1) 15%, rgba(0,36,69,1) 58%, rgba(32,0,73,1) 85%);
+    width: 100vw;
+    overflow: hidden;
+}
+.buffermain {
+    height: 200vh;
+    width: 100vw;
+    background: rgb(13,19,28);
+    background: linear-gradient(135deg, rgba(13,19,28,0.61) 6%, rgba(8,8,8,0.56) 31%, rgba(16,26,40,1) 64%, rgba(0,11,29,1) 92%);
+}
+.head{
+    height: 6.22vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.head-sub{
+    height: 3.28vh;
+    width:5vw;
+}
+.body{
+    height: 194.78vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.St-main {
+    column-count: clamp(1, 3, 3);
+    column-width: clamp(220px,300px,30vw);
+    column-gap: 1vh;
+    row-gap: 1vh;
+    overflow-y: scroll;
+    -webkit-column-break-inside: avoid;
+} 
+.St-Chi {
+    margin: 1em;
+    width: 100vw;
+    height: max-content;
+}
+.St-mother {
+    height: 140vh;
+    width: 86.32vw;
+}
