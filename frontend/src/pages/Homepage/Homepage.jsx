@@ -1,11 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export const Homepage = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold font-quicksand underline">
-        Hello world!
-      </h1>
+      <h1 class="text-3xl font-bold underline">Hello world!</h1>
     </div>
-  )
-}
+  );
+};
