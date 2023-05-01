@@ -1,10 +1,9 @@
-import React from 'react'
-import SignIn from '../Sign-in/SignIn'
+import React from "react";
 
 export const Homepage = () => {
   return (
     <div>
-      <SignIn/>
+      <h1 class="text-3xl font-bold underline">Hello world!</h1>
     </div>
-  )
-}
+  );
+};
