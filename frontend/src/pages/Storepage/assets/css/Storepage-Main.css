@@ -34,14 +34,27 @@
     column-gap: 1vh;
     row-gap: 1vh;
     overflow-y: scroll;
+    overflow-x:hidden;
     -webkit-column-break-inside: avoid;
+    padding-right: 2vh;
+    margin-right: -2vh;
 } 
-.St-Chi {
-    margin: 1em;
-    width: 100vw;
-    height: max-content;
+.St-chi {
+    margin: 1em 1em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .St-mother {
     height: 140vh;
     width: 86.32vw;
 }
+.St-chi:before {
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    bottom: 2vh;
+    border-radius: 2vh;
+    z-index: -1;
+  }
