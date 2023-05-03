@@ -1,6 +1,7 @@
-import { Homepage } from "./Homepage/Homepage";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SignIn from "./Sign-in/SignIn";
+import Homepage from './Homepage/Homepage'
+import  Accountpage from './Accountpage/AccountPage'
+import  Storepage  from './Storepage/Storepage'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
@@ -8,17 +9,21 @@ const router = createBrowserRouter([
     element: <Homepage />,
   },
   {
-    path: "/:id",
-    element: <Homepage />,
+    path:'/account',
+    element: <Accountpage/>,
   },
   {
-    path: "/signin",
-    element: <SignIn />,
-  },
-]);
+    path:'/store',
+    element: <Storepage/>,
+  }
+])
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+    <RouterProvider router={router}/>
+   </>
+  );
 }
 
 export default App;
