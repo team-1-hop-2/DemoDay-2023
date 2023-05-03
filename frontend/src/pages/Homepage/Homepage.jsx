@@ -1,9 +1,13 @@
 import React from "react";
+import HeaderComponent from "../../Components/HeaderComponent";
 
 export const Homepage = () => {
   return (
-    <div>
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <React.Fragment>
+      <HeaderComponent />
+      <div className="bg-[#002445] w-screen h-screen"></div>
+    </React.Fragment>
   );
 };
+
+export default Homepage;
