@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import AccountantPageIcon from "../pages/Assets/accountantPageIcon";
-import HomePageIcon from "../pages/Assets/homePageIcon";
-import StorePageIcon from "../pages/Assets/storePageIcon";
+import AccountantPageIcon from "../assets/accountantPageIcon";
+import HomePageIcon from "../assets/homePageIcon";
+import StorePageIcon from "../assets/storePageIcon";
 
 const styles = {
   changedLogo: {},
