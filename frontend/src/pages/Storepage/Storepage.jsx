@@ -12,6 +12,10 @@ export const Storepage = () => {
             </div>
         </div>
         <div className='body'>
+          <div className='themeslac'>
+            <p className='pelltxt'>Color Palette:</p>
+            <div className='pell-mother'></div>
+          </div>
           <Store/>
         </div>
         <div className='foot'></div>
