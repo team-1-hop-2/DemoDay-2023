@@ -8,6 +8,6 @@ const IMGSchema = new Schema({
 });
 
 
-const IMGModel= model("URLs" , IMGSchema);
+const IMGModel= model("datas" , IMGSchema);
 
 module.exports = IMGModel;

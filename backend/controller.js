@@ -16,7 +16,6 @@ async function generateId() {
 exports.uploadIMG = async (request, response, next) => {
     const id = await generateId()
     const image_data = await IMGModel.create({_id:id,...request.body})
-    console.log("123 avs")
     response
     .status(201)
     .json({message: "Post request successful.", data: image_data})
