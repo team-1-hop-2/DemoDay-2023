@@ -1,5 +1,5 @@
 import React from "react";
-import { GoogleIcon } from "../../assets";
+import { GoogleIcon } from "../../Assets/GoogleIcon";
 
 const SignIn = () => {
   return (
