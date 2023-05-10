@@ -1,9 +1,8 @@
 import {Homepage} from './Homepage/Homepage'
 import {IMGUpload} from './IMGUpload-Test/IMGUpload'
-import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import React, {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import  Accountpage from './Accountpage/AccountPage'
 import  Storepage  from './Storepage/Storepage'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
