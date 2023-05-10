@@ -1,5 +1,6 @@
 import {Homepage} from './Homepage/Homepage'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { Portfolio } from './Portfoliopage/Portfolio';
 
 const router = createBrowserRouter([
   {
@@ -9,6 +10,10 @@ const router = createBrowserRouter([
   {
     path:'/:id',
     element: <Homepage/>,
+  },
+  {
+    path:'/portfolio',
+    element: <Portfolio/>,
   }
 ])
 
