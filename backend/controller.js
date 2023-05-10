@@ -20,3 +20,12 @@ exports.uploadIMG = async (request, response, next) => {
     .status(201)
     .json({message: "Post request successful.", data: image_data})
 }
+
+
+exports.getIMG = async (request, response, next) => {
+    const { id } = request.params
+    const image_data = await IMGModel.findById(id)
+    response
+    .status(201)
+    .json({data: image_data})
+}
