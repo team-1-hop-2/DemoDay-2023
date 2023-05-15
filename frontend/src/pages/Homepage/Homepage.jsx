@@ -1,11 +1,10 @@
 import React from "react";
-import HeaderComponent from "../../Components/HeaderComponent";
+import Portfolio from "../../PortfoliaPage3/component/Header/Navbar"
 
 export const Homepage = () => {
   return (
     <React.Fragment>
-      <HeaderComponent />
-      <div className="bg-[#002445] w-screen h-screen"></div>
+        <Portfolio/>
     </React.Fragment>
   );
 };

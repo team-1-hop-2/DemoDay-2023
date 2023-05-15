@@ -12,6 +12,7 @@ module.exports = {
       'greyblue': '#003147',
       'pinkblue': '#002445',
       'darkpurple': '#200049',
+      'browngrey': '#2B2B2B',
     },
 
     fontFamily: {
