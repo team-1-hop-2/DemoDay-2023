@@ -1,5 +1,4 @@
 @tailwind utilities;
-
 @layer utilities {
 .max-h-39rem {
     height: 32rem;

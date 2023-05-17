@@ -2,6 +2,7 @@ import React, {  useState , useEffect} from "react";
 import { PortfHead } from "./comps/Portf-Head";
 import './assets/support.css';
 import MOCK_DATA from "./MOCK_DATA.json"
+import { PortfContacts } from "./comps/Portf-contacts";
 export const Portfolio = () => {
 
 
@@ -18,20 +19,24 @@ export const Portfolio = () => {
       }, [id]);
 
 
-      const handleidchange = () => {
-        setid(id+1);
+      const handleidchange = (SetIdTo) => {
+        setid(SetIdTo);
       };
 
 
-      const handleBclick = () => {
-        handleidchange();
+      const handleBclick = (SetIdTo) => {
+        handleidchange(SetIdTo);
       }
+ //load a different json array ^
+
 
 
     return(
-        <div className="flex justify-center w-screen">
-            <button onClick={handleBclick}>++</button>
+        <div className="flex justify-center w-screen flex-col">
+          <button onClick={() => handleBclick(0)}></button> 
+          {/* unused ^ jsut for testing remove if wanted */}
                 {selected && <PortfHead data={selected}/>}
+                {selected && <PortfContacts data={selected}/>}
         </div>
     )
 }
