@@ -1,8 +1,8 @@
 import {Homepage} from './Homepage/Homepage'
 import {IMGUpload} from './IMGUpload-Test/IMGUpload'
 import React, {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import  Accountpage from './Accountpage/AccountPage'
 import  Storepage  from './Storepage/Storepage'
+import AccountPageMysites from './Accountpage/AccountPageMysites'
 
 const router = createBrowserRouter([
   {
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
     element: <Homepage/>,
   },
   {
-    path:'/account',
-    element: <Accountpage/>,
+    path:'/accountmysites',
+    element: <AccountPageMysites/>,
   },
   {
     path:'/store',
