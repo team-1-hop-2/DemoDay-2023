@@ -1,7 +1,7 @@
-import Homepage from './Homepage/Homepage'
-import  Accountpage from './Accountpage/AccountPage'
+import {Homepage} from './Homepage/Homepage'
+import {IMGUpload} from './IMGUpload-Test/IMGUpload'
+import React, {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import  Storepage  from './Storepage/Storepage'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import AccountPageMysites from './Accountpage/AccountPageMysites'
 
 const router = createBrowserRouter([
@@ -10,8 +10,12 @@ const router = createBrowserRouter([
     element: <Homepage />,
   },
   {
-    path:'/account',
-    element: <Accountpage/>,
+    path:'/Upload',
+    element: <IMGUpload/>,
+  },
+  {
+    path:'/:id',
+    element: <Homepage/>,
   },
   {
     path:'/accountmysites',
