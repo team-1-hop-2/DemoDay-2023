@@ -1,8 +1,8 @@
 import React from 'react'
 import HeaderComponent from '../../Components/HeaderComponent'
 import { useNavigate, useLocation } from "react-router-dom";
-import GoogleIcon from "../../assets/google"
-import FacebookIcon from "../../assets/facebook"
+import GoogleIcon from "../../Assets/google"
+import FacebookIcon from "../../Assets/facebook"
 
 const styles = {
     underlinedColor: {
@@ -27,6 +27,7 @@ const AccountPageMysites = () => {
   return (
     <React.Fragment>
     <HeaderComponent/>
+    A
     <div className='bg-[#002445] w-screen h-screen flex justify-center items-center'>
       
       <div className='w-[10rem] h-[20rem] flex flex-col justify-between items-baseline text-white mr-[5rem] mb-[16rem]'>
