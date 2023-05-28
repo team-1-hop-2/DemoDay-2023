@@ -17,20 +17,20 @@ import StorePageIcon from "../Assets/storePageIcon";
   // }
 // };
 
-const HeaderComponent = () => {
+const HeaderComponent = (props) => {
+  const pathname = window.location.pathname
   const navigate = useNavigate();
   
   const navigator = (path) => {
    navigate(path)
   }
-
   return (
-    <div className="fixed top-0 w-screen h-20 bg-transparent">
+    <div className="fixed top-0 w-screen h-20 bg-transparent z-50">
       <div className="w-full h-full flex justify-center items-center pt-3 flex-row text-white gap-4">
        
-        <AccountantPageIcon onClick={() => navigator('/account')} />
-        <HomePageIcon onClick={() => navigator('/')} />
-        <StorePageIcon onClick={() => navigator('/store')}/>
+        <AccountantPageIcon  PStyle={pathname==='/account' ? 1 : 0.5} onClick={() => navigator('/account')} />
+        <HomePageIcon PStyle={pathname==='/' ? 1 : 0.5} onClick={() => navigator('/')} />
+        <StorePageIcon PStyle={pathname==='/store' ? 1 : 0.5} onClick={() => navigator('/store')}/>
   
       </div>
     </div>
